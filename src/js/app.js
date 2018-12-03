@@ -36,13 +36,13 @@ function AngularApplicationConfig($provide, $compileProvider, $validatorProvider
 
     $provide.constant(networkConstants,
         angular.extend(networkConstants, {
-            NETWORK_NAME: 'testnet',
-            NETWORK_CODE: 'T'
+            NETWORK_NAME: 'mainnet',
+            NETWORK_CODE: 'W'
         }));
     $provide.constant(applicationSettings,
         angular.extend(applicationSettings, {
             CLIENT_VERSION: '0.4.1a',
-            NODE_ADDRESS: 'https://testnode1.wavesnodes.com',
+            NODE_ADDRESS: 'https://nodes.wavesnodes.com',
             COINOMAT_ADDRESS: 'https://test.coinomat.com',
             MATCHER_ADDRESS: 'https://matcher.wavesnodes.com',
             DATAFEED_ADDRESS: 'https://marketdata.wavesplatform.com'
