@@ -13,6 +13,13 @@
         ctrl.addressCopied = addressCopied;
         ctrl.isLeasing = isLeasing;
         ctrl.cancelLeasing = cancelLeasing;
+        ctrl.showTxinExplorer = showTxinExplorer;
+
+        function showTxinExplorer ()
+        {
+            var url = "http://wavesexplorer.com/tx/" + ctrl.transaction.id;
+            window.open(url, '_blank');
+        }
 
         function addressCopied () {
             return notificationService.notice('Address has been copied');
