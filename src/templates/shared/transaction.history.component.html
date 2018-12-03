@@ -13,7 +13,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="tx in $ctrl.transactions | orderBy:'timestamp':true | limitTo:$ctrl.limitTo | transaction track by tx.timestamp"
+      <tr ng-repeat="tx in $ctrl.transactions | filter:{ assetId: '2m4SEz8Bq9zgjBXF89Z1FQTkrUY6JYnvu9YFhitkBW51' } | orderBy:'timestamp':true | limitTo:$ctrl.limitTo | transaction track by tx.timestamp"
           ng-class="{'tx-unc': tx.unconfirmed, 'tx-in': !tx.formatted.isOutgoing, 'tx-out': tx.formatted.isOutgoing}">
         <td>{{tx.formatted.datetime}}</td>
         <td>{{tx.formatted.type}}</td>
