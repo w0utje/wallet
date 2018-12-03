@@ -203,6 +203,12 @@
     </tbody>
 
   </table>
+
+  <div id="MyFooter" class="flex-container" ng-controller="mainMenuController as menu" style="position:absolute;height:30px;bottom:0;left: 0;width: 100%;padding-left: 8rem;padding-right: 8rem;">
+This wallet is open-sourced and non-custodial. You can examine the code yourself here: <a href="https://github.com/gamaxa/wallet" target="_blank">https://github.com/gamaxa/wallet</a>
+  </div>
+
+
 </div>
 
 <div id="wrapper" ng-switch-when="main-screen" ng-cloak>
@@ -1237,16 +1243,6 @@ Suspendisse porttitor sem facilisis, volutpat odio vitae, aliquet lorem. Integer
         <!-- /COMMUNITY TAB -->
       </section>
     </section>
-  </div>
-  <div id="MyFooter" class="flex-container" ng-controller="mainMenuController as menu" style="position:absolute;height:30px;bottom:0">
-    <a href="http://www.gamaxa.com" target="_blank" style="margin-left: auto;margin-right: auto;position: absolute;" >
-    <img id="Gamaxa-G" src="img/Gamaxa-G.png" alt="GamaxaG" height="32" width="32"/>
-  </a>
-    <div style="margin-left:auto; margin-right:0;">
-    <a ng-click="menu.showTermsDialog()" >
-      <div class="Terms-btn" style="width:100px;"><p>Terms</p></div>
-      </a>
-    </div>
   </div>
 </div> <!-- Wrapper div END -->
 
